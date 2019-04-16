@@ -37,8 +37,6 @@ def color_filter(image):
     mask = cv2.bitwise_or(yellowmask, whitemask)
     masked = cv2.bitwise_and(image, image, mask = mask)
 
-
-
     return masked
 
 filtered_img = list(map(color_filter, imageList))
@@ -168,7 +166,4 @@ def weightSum(input_set):
 
 result_img = list(map(weightSum, zip(hough_img, imageList)))
 display_images(result_img)
-
-
-
 
