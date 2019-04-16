@@ -2,7 +2,6 @@ Youtube Linki:------------------------------
 
 
 
-
 OpenEmbedded Layers:
 git://git.yoctoproject.org/poky
 git://git.openembedded.org/meta-openembedded
