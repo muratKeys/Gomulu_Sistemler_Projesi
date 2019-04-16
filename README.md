@@ -1,4 +1,6 @@
-Youtube Linki:------------------------------
+Youtube Linki: https://www.youtube.com/watch?v=68sxcJ2QARU&t=23s
+
+
 
 Açıklama:
 
