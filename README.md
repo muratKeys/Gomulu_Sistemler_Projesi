@@ -1,5 +1,8 @@
 Youtube Linki:------------------------------
 
+Açıklama:
+
+Yocto Project ile RaspberryPi 3 için minimal bir GNU/Linux dağıtımı oluşturuldu. Bu dağıtım gerekli python kütüphanelerini barındıracak şekilde düzenlendi. Böylece istenmeyen paketler ve eklentiler GNU/Linux işletiminin kaynaklarını meşgul etmeyecek ve sistem daha performasnlı çalışacak. 
 
 
 
