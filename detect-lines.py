@@ -4,6 +4,7 @@ import matplotlib.image as mpimg
 import numpy as np
 import math
 import cv2
+from moviepy.editor import VideoFileClip
 
 imageDir = 'test_images/'
 imageFiles = os.listdir(imageDir)
@@ -167,3 +168,18 @@ def weightSum(input_set):
 result_img = list(map(weightSum, zip(hough_img, imageList)))
 display_images(result_img)
 
+
+
+def processImage(image):
+    interest = roi(image)
+    filterimg = color_filter(interest)
+    canny = cv2.Canny(grayscale(filterimg), 50, 120)
+    myline = hough_lines(canny, 1, np.pi/180, 10, 20, 5)
+    weighted_img = cv2.addWeighted(myline, 1, image, 0.8, 0)
+    
+    return weighted_img
+
+
+output1 = 'videos_output/solidYellowLeft.mp4'
+clip1 = VideoFileClip("test_videos/solidYellowLeft.mp4")#.subclip(3,5)
+pclip1 = clip1.fl_image(processImage) #NOTE: this function expects color images!!
